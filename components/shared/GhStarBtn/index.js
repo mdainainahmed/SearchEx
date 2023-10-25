@@ -10,7 +10,7 @@ const GhStarBtn = () => {
     const [stargazers_count, setStargazers_count] = useState('--');
 
     useEffect(() => {
-        axios.get("https://api.github.com/repos/devxprite/searchex")
+        axios.get("https://api.github.com/repos/mdainainahmed/SearchEx")
             .then(res => { setStargazers_count(res.data.stargazers_count || '--'); })
             .catch(err => { console.log(err); })
     }, []);
